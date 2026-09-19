@@ -2,8 +2,6 @@
 
 // A word is a maximal substring consisting of non-space characters only.
 
- 
-
 // Example 1:
 
 // Input: s = "Hello World"
@@ -11,12 +9,12 @@
 // Explanation: The last word is "World" with length 5.
 
 var lengthOfLastWord = function (s) {
-    newword = s.split(" ")
+  newS = s.trim();
 
-    for(i=0;i<newword.length;i++){
-        ss = newword[newword.length-1]
-    }
-        console.log(ss.length)
+  newword = newS.split(" ");
+
+  for (i = 0; i < newword.length; i++) {
+    ss = newword[newword.length - 1];
+  }
+  return ss.length;
 };
-
-lengthOfLastWord("hello world")
