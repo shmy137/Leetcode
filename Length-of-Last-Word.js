@@ -18,3 +18,12 @@ var lengthOfLastWord = function (s) {
   }
   return ss.length;
 };
+
+
+// Shorter Way
+var lengthOfLastWord = function (s) {
+    newS = s.trim();
+    newword = newS.split(" ");
+    return newword[newword.length - 1].length
+};
+
